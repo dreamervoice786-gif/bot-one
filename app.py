@@ -118,7 +118,7 @@ if prompt := st.chat_input("Ask me anything..."):
 
         try:
             response = client.chat.completions.create(
-                model="qwen/qwen3.8-27b",
+                model="openai/gpt-oss-120b",
                 messages=st.session_state.messages,
                 temperature=temperature,
                 max_tokens=max_tokens,
